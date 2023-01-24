@@ -349,7 +349,6 @@ GameObject:
   - component: {fileID: 1557778987}
   - component: {fileID: 1557778989}
   - component: {fileID: 1557778988}
-  - component: {fileID: 1557778990}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -463,8 +462,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a99d8735d51bcb24a84421dbecdace0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 1557778986}
   multiplier: 1
   speed: 3
+  positions:
+  - -1
+  - 0
+  - 1
+  startingPos: 1
 --- !u!114 &1557778988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,22 +500,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gravityScale: 1
   globalGravity: -9.81
---- !u!114 &1557778990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557778981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8904fe3cf8f884349a95a62d9aadfe17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dashTime: 1
-  cooldown: 1
-  rb: {fileID: 1557778986}
-  controller: {fileID: 1557778987}
 --- !u!1 &1875833144
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,7 +524,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1875833144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 44.9}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -555,7 +544,6 @@ GameObject:
   - component: {fileID: 2067363694}
   - component: {fileID: 2067363693}
   - component: {fileID: 2067363692}
-  - component: {fileID: 2067363695}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Ground
@@ -572,7 +560,7 @@ Transform:
   m_GameObject: {fileID: 2067363690}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 2.96}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1875833145}
@@ -642,16 +630,3 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067363690}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2067363695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2067363690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a53904ac04cccc449af59531c70a3599, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: {x: 0, y: 0, z: -1.35}

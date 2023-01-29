@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.unity.adaptiveperformance": "4.0.1",
     "com.unity.collab-proxy": "1.17.7",
     "com.unity.feature.development": "1.0.1",
     "com.unity.ide.rider": "3.0.18",
@@ -13,6 +12,7 @@
     "com.unity.toolchain.win-x86_64-linux-x86_64": "2.0.4",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.7.8",
+    "net.tomweiland.riptide": "https://github.com/RiptideNetworking/Riptide.git?path=/Packages/Core#2.0.0",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",

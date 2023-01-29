@@ -1,5 +1,6 @@
     //copied from https://forum.unity.com/threads/why-does-rigidbody-3d-not-have-a-gravity-scale.440415/#post-2847743
     using UnityEngine;
+    
      
     [RequireComponent(typeof(Rigidbody))]
     public class ManualGravity : MonoBehaviour
